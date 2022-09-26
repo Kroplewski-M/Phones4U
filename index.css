@@ -32,8 +32,9 @@ body{
         overflow: hidden;
         position: absolute;
         width:340px;
-        bottom: -100px;
-        left: -100px;
+        bottom: -170px;
+        left: -140px;
+        z-index: -1;
         transform: rotate(30deg);
     }
 }

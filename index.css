@@ -1,0 +1,39 @@
+*{
+    margin:0;
+}
+
+body{
+    background-color: #1B1B1B;
+}
+/* phones */
+@media only screen and (max-width: 700px){
+	.container{
+        width: 700px;
+        height: 100vh;
+        
+    }
+    #pixelHero{
+        position: absolute;
+        transform: rotate(220deg);
+        overflow: hidden;
+        width:340px;
+        right:-150px;
+        margin-top: -100px;
+    }
+    #title{
+        font-size: 50px;
+        color:rgb(209 213 219);
+        margin-top: 40vh;
+        position: absolute;
+        text-align: center;
+        font-family: 'Dangrek', cursive;
+    }
+    #iphoneHero{
+        overflow: hidden;
+        position: absolute;
+        width:340px;
+        bottom: -100px;
+        left: -100px;
+        transform: rotate(30deg);
+    }
+}

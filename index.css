@@ -64,10 +64,16 @@ background: linear-gradient(to top, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Fir
         border-radius: 5px;
         background-color: #F2994A;
         border: 0px;
-        box-shadow: 3px 5px;
+        box-shadow: 3px 5px black;
         font-weight: bold;
         float: right;
         margin-right: 70px;
         margin-top: 20px
+    }
+    #search:hover{
+        cursor: pointer;
+    }
+    #search:active{
+        transform: translateY(2px);
     }
 }

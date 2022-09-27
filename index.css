@@ -51,10 +51,12 @@ body{
     width: 500px;
     transform: rotate(320deg);
     z-index: -1;
+    filter: drop-shadow(30px 10px 4px #4AC29A);
 
 }
 #iphoneHero{
     width: 500px;
+    filter: drop-shadow(30px 10px 4px #4444dd);
 }   
 #search{
     width: 200px;

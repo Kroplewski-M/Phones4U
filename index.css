@@ -4,12 +4,82 @@
 
 body{
     background: #F2994A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to top, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+@media only screen and (min-width: 761px){
+    /*Desktop*/
+.container{
+    width: 100vw;
+    max-width: 1000px;
+    height: 100vh;
+    max-height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#logoHero{
+    width: 170px;
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border: 2px solid black;
+    padding-left: 10px;
+    padding-right:5px
+}
+#titleContainer{
+    float: right;
+}
+#title{
+    font-size: 70px;
+    color:rgb(209 213 219);
+    text-align: left;
+    font-family: 'Dangrek', cursive;
+    text-shadow: 2px 2px black;
+    margin-top: 120px;
+    width: 500px;
+}
+#pixelHero{
+    position: absolute;
+    right:-200px;
+    top: 400px;
+    overflow: hidden;
+    width: 500px;
+    transform: rotate(320deg);
+    z-index: -1;
+
+}
+#iphoneHero{
+    width: 500px;
+}   
+#search{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #F2994A;
+    border: 0px;
+    box-shadow: 3px 5px black;
+    font-weight: bold;
+    float: right;
+    margin-right: 70px;
+    color: #111111;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#search:hover{
+    cursor: pointer;
+}
+#search:active{
+    transform: translateY(2px);
+}
 
 }
 /* phones */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 760px){
 	.container{
         width: 700px;
         height: 100vh;
@@ -68,6 +138,7 @@ background: linear-gradient(to top, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Fir
         font-weight: bold;
         float: right;
         margin-right: 70px;
+        color: #111111;
         margin-top: 20px
     }
     #search:hover{

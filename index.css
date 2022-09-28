@@ -66,6 +66,7 @@
         font-weight: bold;
         font-family: dangrek;
         border: 0;
+        color: black;
     }
     #shopNow:hover{
         cursor: pointer;

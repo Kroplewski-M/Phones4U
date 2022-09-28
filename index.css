@@ -43,14 +43,43 @@
     #iphoneHero{
         width: 500px;
         position: absolute;
-        bottom: -200px;
+        bottom: -300px;
+        left:-40px;
     }
     #title{
-        font-size: 50px;
+        font-size: 45px;
         font-family: dangrek;
         text-align: center;
         margin-top: 30px;
         color: #EEEEEE;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 10;
     }
-
+    #shopNow{
+        width: 100px;
+        height: 30px;
+        background-color: #EEEEEE;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: dangrek;
+        border: 0;
+    }
+    #shopNow:hover{
+        cursor: pointer;
+        background-color: #CCCCCC;
+    }
+    #shopNow:active{
+        transform: translateY(4px);
+    }
+    #buttonContainer{
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        z-index: 10;
+        position: relative;
+    }
 }

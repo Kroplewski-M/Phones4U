@@ -2,6 +2,32 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: #111111;
+}
+/* desktop */
+@media only screen and (min-width: 761px){
+    #nav{
+        width: 100vw;
+        height: 50px;
+        background-color: black;
+        position: relative;
+        padding-top: 20px;
+    }
+    #logo{
+        border: 2px solid white;
+        color: white;
+        position: relative;
+        z-index: 10;
+        width: 100px;
+        padding-left: 20px;
+        font-family: dangrek;
+        margin-left: 10px;
+    }
+    #mobileMenu{
+        visibility: hidden;
+    }
+}
 
 /* phones */
 @media only screen and (max-width: 760px){

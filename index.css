@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+a{
+    all: unset;
+}
 body{
     background-color: #111111;
 }
@@ -13,6 +16,7 @@ body{
         background-color: black;
         position: relative;
         padding-top: 20px;
+        display: flex;
     }
     #logo{
         border: 2px solid white;
@@ -23,9 +27,24 @@ body{
         padding-left: 20px;
         font-family: dangrek;
         margin-left: 10px;
+        height: 30px;
     }
     #mobileMenu{
         visibility: hidden;
+    }
+    #desktopMenu{
+        font-size: 22px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        max-width:1000px;
+        min-width:500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #desktopMenu > a:hover{
+        cursor: pointer;
+        text-decoration: underline;
     }
 }
 
@@ -39,6 +58,9 @@ body{
         position: relative;
         overflow: hidden;
         background-color: #111111;
+    }
+    #desktopMenu{
+        visibility: hidden;
     }
     #nav{
         width: 100vw;
@@ -60,7 +82,7 @@ body{
     #mobileMenu{
         float: right;
         width: 30px;
-        margin-top: -30px;
+        margin-top: -50px;
         margin-right: 25px;
     }
     #mobileMenu:hover{

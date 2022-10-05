@@ -59,16 +59,16 @@ body{
     #title{
         font-size: 55px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        margin-top: 70px;
+        margin-top: 100px;
         color: #EEEEEE;
         max-width: 450px;
         float: right;
-        margin-bottom: 65px;
+        margin-bottom: 75px;
     }
     #buttonContainer{
         position: absolute;
         right: 90px;
-        top: 250px;
+        top: 290px;
     }
    #slogan{
         font-size: 20px;

@@ -46,6 +46,53 @@ body{
         cursor: pointer;
         text-decoration: underline;
     }
+    #hero{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    #iphoneHero{
+        width: 550px;
+        float: left;
+    }
+    #title{
+        font-size: 55px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 70px;
+        color: #EEEEEE;
+        max-width: 450px;
+        float: right;
+        margin-bottom: 65px;
+    }
+    #buttonContainer{
+        position: absolute;
+        right: 90px;
+        top: 250px;
+    }
+   #slogan{
+        font-size: 20px;
+        color: #BBBBBB;
+   }
+
+    #shopNow{
+        width: 120px;
+        height: 40px;
+        font-size: 20px;
+        background-color: #EEEEEE;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: dangrek;
+        border: 0;
+        color: black;
+    }
+    #shopNow:hover{
+        cursor: pointer;
+        background-color: #CCCCCC;
+    }
+    #shopNow:active{
+        transform: translateY(4px);
+    }
 }
 
 /* phones */
@@ -62,6 +109,9 @@ body{
     #desktopMenu{
         visibility: hidden;
     }
+    #slogan{
+        visibility: hidden;
+   }
     #nav{
         width: 100vw;
         height: 50px;
@@ -96,7 +146,7 @@ body{
     }
     #title{
         font-size: 45px;
-        font-family: dangrek;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-align: center;
         margin-top: 30px;
         color: #EEEEEE;

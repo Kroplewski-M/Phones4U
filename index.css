@@ -93,6 +93,13 @@ body{
     #shopNow:active{
         transform: translateY(4px);
     }
+    #heroContainer{
+        height:100vh;
+        margin-bottom: 400px;
+    }
+    #main{
+        height: 100vh;
+    }
 }
 
 /* phones */

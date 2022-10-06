@@ -8,158 +8,7 @@ a,select{
 body{
     background-color: #111111;
 }
-
-/* desktop */
-@media only screen and (min-width: 761px){
-    .nav{
-        width: 100vw;
-        height: 50px;
-        background-color: black;
-        position: relative;
-        padding-top: 20px;
-        display: flex;
-    }
-    .logo{
-        border: 2px solid white;
-        color: white;
-        position: relative;
-        z-index: 10;
-        width: 100px;
-        padding-left: 20px;
-        font-family: dangrek;
-        margin-left: 10px;
-        height: 30px;
-    }
-    .mobileMenu{
-        visibility: hidden;
-    }
-    .desktopMenu{
-        font-size: 22px;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        max-width:1000px;
-        min-width:500px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .desktopMenu > a:hover{
-        cursor: pointer;
-        text-decoration: underline;
-    }
-    .hero{
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-    }
-    .iphoneHero{
-        width: 550px;
-        float: left;
-    }
-    .title{
-        font-size: 55px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        margin-top: 100px;
-        color: #EEEEEE;
-        max-width: 450px;
-        float: right;
-        margin-bottom: 75px;
-    }
-    .buttonContainer{
-        position: absolute;
-        right: 90px;
-        top: 290px;
-    }
-   .slogan{
-        font-size: 20px;
-        color: #BBBBBB;
-   }
-
-    .shopNow{
-        width: 120px;
-        height: 40px;
-        font-size: 20px;
-        background-color: #EEEEEE;
-        border-radius: 5px;
-        font-weight: bold;
-        font-family: dangrek;
-        border: 0;
-        color: black;
-    }
-    .shopNow:hover{
-        cursor: pointer;
-        background-color: #CCCCCC;
-    }
-    .shopNow:active{
-        transform: translateY(4px);
-    }
-    .heroContainer{
-        height:100vh;
-        margin-bottom: 400px;
-        min-width: 1000px;
-    }
-    .main{
-        height: 100vh;
-        color:#BBBBBB;
-        font-size: 20px;
-        font-weight: 500;
-    }
-    .filterDesktop{
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .filterDesktop > label{
-        margin-left: 30px;
-    }
-    .filterDesktop > select{
-        width: 80px;
-        height: 20px;
-        padding-left: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        background-color: #222222;
-        border-radius: 3px;
-        color: #CCCCCC;
-    }
-    .search{
-        margin-top: 40px;
-        width:300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .phoneSearch{
-        width: 130px;
-        height: 25px;
-        border-radius: 3px;
-        padding-left: 5px;
-        background-color: #222222;
-        color: #CCCCCC;
-        border:0px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .phoneButton{
-        width: 70px;
-        height: 30px;
-        font-weight: 600;
-        background-color: #EEEEEE;
-        color: #111111;
-        border: 0px;
-        border-radius: 3px;
-    }
-    .phoneButton:hover{
-        background-color: #BBBBBB;
-        cursor: pointer;
-    }
-    .phoneButton:active{
-        transform: translateY(2px);
-    }
-}
-
 /* phones */
-
     .heroContainer{
         width: 100vw;
         height: 100vh;
@@ -256,3 +105,162 @@ body{
     .search{
         visibility: hidden;
     }
+
+    /* desktop */
+@media only screen and (min-width: 760px){
+    .nav{
+        width: 100vw;
+        height: 50px;
+        background-color: black;
+        position: relative;
+        padding-top: 20px;
+        display: flex;
+    }
+    .logo{
+        border: 2px solid white;
+        color: white;
+        position: relative;
+        z-index: 10;
+        width: 100px;
+        padding-left: 20px;
+        font-family: dangrek;
+        margin-left: 10px;
+        height: 30px;
+    }
+    .mobileMenu{
+        visibility: hidden;
+    }
+    .desktopMenu{
+        font-size: 22px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        max-width:1000px;
+        min-width:500px;
+        margin-left: auto;
+        margin-right: auto;
+        visibility: visible;
+    }
+    .desktopMenu > a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .hero{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        height: 100%;
+    }
+    .iphoneHero{
+        width: 500px;
+        float: left;
+        position: absolute;
+        top: -30px;
+    }
+    .title{
+        font-size: 55px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 100px;
+        color: #EEEEEE;
+        max-width: 450px;
+        float: right;
+        margin-bottom: 75px;
+        text-align: left;
+    }
+    .buttonContainer{
+        position: absolute;
+        right: 90px;
+        top: 290px;
+    }
+   .slogan{
+        font-size: 20px;
+        color: #BBBBBB;
+        visibility: visible;
+        position: absolute;
+        top: 340px;
+        right: 300px;
+   }
+    .shopNow{
+        width: 120px;
+        height: 40px;
+        font-size: 20px;
+        background-color: #EEEEEE;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: dangrek;
+        border: 0;
+        color: black;
+    }
+    .shopNow:hover{
+        cursor: pointer;
+        background-color: #CCCCCC;
+    }
+    .shopNow:active{
+        transform: translateY(4px);
+    }
+    .heroContainer{
+        height:100vh;
+        margin-bottom: 50px;
+        min-width: 1000px;
+    }
+    .main{
+        height: 100vh;
+        color:#BBBBBB;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .filterDesktop{
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        visibility: visible;
+    }
+    .filterDesktop > label{
+        margin-left: 30px;
+    }
+    .filterDesktop > select{
+        width: 80px;
+        height: 20px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #222222;
+        border-radius: 3px;
+        color: #CCCCCC;
+    }
+    .search{
+        margin-top: 40px;
+        width:300px;
+        margin-left: auto;
+        margin-right: auto;
+        visibility: visible;
+    }
+    .phoneSearch{
+        width: 130px;
+        height: 25px;
+        border-radius: 3px;
+        padding-left: 5px;
+        background-color: #222222;
+        color: #CCCCCC;
+        border:0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #phoneButton{
+        width: 70px;
+        height: 30px;
+        font-weight: 600;
+        background-color: #EEEEEE;
+        color: #111111;
+        border: 0px;
+        border-radius: 3px;
+    }
+    #phoneButton:hover{
+        background-color: #BBBBBB;
+        cursor: pointer;
+    }
+    #phoneButton:active{
+        transform: translateY(2px);
+    }
+}

@@ -2,15 +2,16 @@
     padding: 0;
     margin: 0;
 }
-a{
+a,select{
     all: unset;
 }
 body{
     background-color: #111111;
 }
+
 /* desktop */
 @media only screen and (min-width: 761px){
-    #nav{
+    .nav{
         width: 100vw;
         height: 50px;
         background-color: black;
@@ -18,7 +19,7 @@ body{
         padding-top: 20px;
         display: flex;
     }
-    #logo{
+    .logo{
         border: 2px solid white;
         color: white;
         position: relative;
@@ -29,10 +30,10 @@ body{
         margin-left: 10px;
         height: 30px;
     }
-    #mobileMenu{
+    .mobileMenu{
         visibility: hidden;
     }
-    #desktopMenu{
+    .desktopMenu{
         font-size: 22px;
         color: white;
         display: flex;
@@ -42,21 +43,21 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
-    #desktopMenu > a:hover{
+    .desktopMenu > a:hover{
         cursor: pointer;
         text-decoration: underline;
     }
-    #hero{
+    .hero{
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
         position: relative;
     }
-    #iphoneHero{
+    .iphoneHero{
         width: 550px;
         float: left;
     }
-    #title{
+    .title{
         font-size: 55px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin-top: 100px;
@@ -65,17 +66,17 @@ body{
         float: right;
         margin-bottom: 75px;
     }
-    #buttonContainer{
+    .buttonContainer{
         position: absolute;
         right: 90px;
         top: 290px;
     }
-   #slogan{
+   .slogan{
         font-size: 20px;
         color: #BBBBBB;
    }
 
-    #shopNow{
+    .shopNow{
         width: 120px;
         height: 40px;
         font-size: 20px;
@@ -86,25 +87,80 @@ body{
         border: 0;
         color: black;
     }
-    #shopNow:hover{
+    .shopNow:hover{
         cursor: pointer;
         background-color: #CCCCCC;
     }
-    #shopNow:active{
+    .shopNow:active{
         transform: translateY(4px);
     }
-    #heroContainer{
+    .heroContainer{
         height:100vh;
         margin-bottom: 400px;
+        min-width: 1000px;
     }
-    #main{
+    .main{
         height: 100vh;
+        color:#BBBBBB;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .filterDesktop{
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .filterDesktop > label{
+        margin-left: 30px;
+    }
+    .filterDesktop > select{
+        width: 80px;
+        height: 20px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #222222;
+        border-radius: 3px;
+        color: #CCCCCC;
+    }
+    .search{
+        margin-top: 40px;
+        width:300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .phoneSearch{
+        width: 130px;
+        height: 25px;
+        border-radius: 3px;
+        padding-left: 5px;
+        background-color: #222222;
+        color: #CCCCCC;
+        border:0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .phoneButton{
+        width: 70px;
+        height: 30px;
+        font-weight: 600;
+        background-color: #EEEEEE;
+        color: #111111;
+        border: 0px;
+        border-radius: 3px;
+    }
+    .phoneButton:hover{
+        background-color: #BBBBBB;
+        cursor: pointer;
+    }
+    .phoneButton:active{
+        transform: translateY(2px);
     }
 }
 
 /* phones */
-@media only screen and (max-width: 760px){
-    #heroContainer{
+
+    .heroContainer{
         width: 100vw;
         height: 100vh;
         border: 2px solid black;
@@ -113,20 +169,20 @@ body{
         overflow: hidden;
         background-color: #111111;
     }
-    #desktopMenu{
+    .desktopMenu{
         visibility: hidden;
     }
-    #slogan{
+    .slogan{
         visibility: hidden;
    }
-    #nav{
+    .nav{
         width: 100vw;
         height: 50px;
         background-color: black;
         position: relative;
         padding-top: 20px;
     }
-    #logo{
+    .logo{
         border: 2px solid white;
         color: white;
         position: relative;
@@ -136,22 +192,22 @@ body{
         font-family: dangrek;
         margin-left: 10px;
     }
-    #mobileMenu{
+    .mobileMenu{
         float: right;
         width: 30px;
         margin-top: -50px;
         margin-right: 25px;
     }
-    #mobileMenu:hover{
+    .mobileMenu:hover{
         cursor: pointer;
     }
-    #iphoneHero{
+    .iphoneHero{
         width: 500px;
         position: absolute;
         bottom: -300px;
         left:-40px;
     }
-    #title{
+    .title{
         font-size: 45px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-align: center;
@@ -163,7 +219,7 @@ body{
         position: relative;
         z-index: 10;
     }
-    #shopNow{
+    .shopNow{
         width: 100px;
         height: 30px;
         background-color: #EEEEEE;
@@ -173,14 +229,14 @@ body{
         border: 0;
         color: black;
     }
-    #shopNow:hover{
+    .shopNow:hover{
         cursor: pointer;
         background-color: #CCCCCC;
     }
-    #shopNow:active{
+    .shopNow:active{
         transform: translateY(4px);
     }
-    #buttonContainer{
+    .buttonContainer{
         width: 100px;
         margin-left: auto;
         margin-right: auto;
@@ -188,4 +244,15 @@ body{
         z-index: 10;
         position: relative;
     }
-}
+    .filterDesktop{
+        visibility: hidden;
+    }
+    .main{
+        height: 100vh;
+        color:#BBBBBB;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .search{
+        visibility: hidden;
+    }

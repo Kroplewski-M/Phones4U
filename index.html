@@ -13,29 +13,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="heroContainer">
-        <nav id="nav">
-            <p id="logo">PHONES4U</p>
-            <div id="desktopMenu">
+    <section class="heroContainer">
+        <nav class="nav">
+            <p class="logo">PHONES4U</p>
+            <div class="desktopMenu">
                 <a href="#">Samsung</a>
                 <a href="#">Iphone</a>
                 <a href="#">Google</a>
                 <a href="#">Motorola</a>
                 <a href="#">Nokia</a>
             </div>
-            <img src="./images/menu.png" alt="" id="mobileMenu">
+            <img src="./images/menu.png" alt="" class="mobileMenu">
         </nav>
-        <div id="hero">
-            <p id="title">Take your phone to the next level</p>
-            <div id="buttonContainer">
-                <button id="shopNow">Shop now</button>
+        <div class="hero">
+            <p class="title">Take your phone to the next level</p>
+            <div class="buttonContainer">
+                <button class="shopNow">Shop now</button>
             </div>
-            <img src="./images/iphone13.png" alt="" id="iphoneHero">
+            <img src="./images/iphone13.png" alt="" class="iphoneHero">
         </div>
-        <p id="slogan">Just a click away...</p>
+        <p class="slogan">Just a click away...</p>
     </section>
-    <section id="main">
-        <div id="filterDesktop">
+    <section class="main">
+        <div class="filterDesktop">
             <label for="brands">Brand:</label>
             <select name="brands" id="selectBrand">
                 <option value="all" selected>All</option>
@@ -71,9 +71,11 @@
                 <option value="256">256GB</option>
                 <option value="512">512GB</option>
             </select>
+        </div>
+        <div class="search">
             <label for="search">Search:</label>
-            <input type="text">
-            <button>find phone</button>
+            <input name="search" type="text" id="phoneSearch">
+            <button id="phoneButton">Find phone</button>
         </div>
     </section>
 </body>

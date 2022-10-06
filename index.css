@@ -6,7 +6,9 @@ a,select{
     all: unset;
 }
 body{
+    overflow-x: hidden;
     background-color: #111111;
+
 }
 /* phones */
     .heroContainer{
@@ -101,6 +103,7 @@ body{
         color:#BBBBBB;
         font-size: 20px;
         font-weight: 500;
+        background-color: #111111;
     }
     .search{
         visibility: hidden;
@@ -111,7 +114,6 @@ body{
     .nav{
         width: 100vw;
         height: 50px;
-        background-color: black;
         position: relative;
         padding-top: 20px;
         display: flex;
@@ -150,7 +152,7 @@ body{
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        height: 100%;
+        margin-top: 50px;
     }
     .iphoneHero{
         width: 500px;
@@ -163,7 +165,7 @@ body{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin-top: 100px;
         color: #EEEEEE;
-        max-width: 450px;
+        max-width: 480px;
         float: right;
         margin-bottom: 75px;
         text-align: left;
@@ -201,14 +203,17 @@ body{
     }
     .heroContainer{
         height:100vh;
-        margin-bottom: 50px;
         min-width: 1000px;
+        max-height: 100vh;
+        margin-bottom: 0px;
     }
     .main{
         height: 100vh;
+        width: 100vw;
         color:#BBBBBB;
         font-size: 20px;
         font-weight: 500;
+        margin-top: 40px;
     }
     .filterDesktop{
         width: 1200px;
@@ -231,7 +236,7 @@ body{
     }
     .search{
         margin-top: 40px;
-        width:300px;
+        width:330px;
         margin-left: auto;
         margin-right: auto;
         visibility: visible;

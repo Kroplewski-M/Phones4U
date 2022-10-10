@@ -7,6 +7,7 @@ const phones = {
     memory: "512GB",
     cost: 1149,
     colors: ["gold", "silver", "gray"],
+    ext: "Iphone12Pro.png",
   },
   1: {
     brand: "Apple",
@@ -14,6 +15,7 @@ const phones = {
     memory: "64GB",
     cost: 349,
     colors: ["red", "white"],
+    ext: "IphoneSE2020.png",
   },
   2: {
     brand: "Apple",
@@ -21,6 +23,7 @@ const phones = {
     memory: "256GB",
     cost: 729,
     colors: ["blue", "white", "pink", "black"],
+    ext: "Iphone13Mini.png",
   },
   3: {
     brand: "Google",
@@ -28,6 +31,7 @@ const phones = {
     memory: "128GB",
     cost: 399,
     colors: ["white", "green", "black"],
+    ext: "Pixel6A.png",
   },
   4: {
     brand: "Google",
@@ -35,6 +39,7 @@ const phones = {
     memory: "256GB",
     cost: 749,
     colors: ["black"],
+    ext: "Pixel6Pro.png",
   },
   5: {
     brand: "Samsung",
@@ -42,6 +47,7 @@ const phones = {
     memory: "128GB",
     cost: 949,
     colors: ["green", "black", "white", "pink"],
+    ext: "GalaxyS22Plus.png",
   },
   6: {
     brand: "Samsung",
@@ -49,6 +55,7 @@ const phones = {
     memory: "64GB",
     cost: 129,
     colors: ["black", "white"],
+    ext: "GalaxyA13.png",
   },
   7: {
     brand: "Motorolla",
@@ -56,6 +63,7 @@ const phones = {
     memory: "128GB",
     cost: 249,
     colors: ["gray"],
+    ext: "MotoG82.png",
   },
   8: {
     brand: "Motorolla",
@@ -63,6 +71,7 @@ const phones = {
     memory: "32GB",
     cost: 89,
     colors: ["blue", "gray"],
+    ext: "MotoE30.png",
   },
   9: {
     brand: "Nokia",
@@ -70,6 +79,7 @@ const phones = {
     memory: "4 MB",
     cost: 25,
     colors: ["black", "blue", "pink"],
+    ext: "Nokia105.png",
   },
 };
 

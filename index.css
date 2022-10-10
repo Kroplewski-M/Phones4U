@@ -253,6 +253,9 @@ body{
         border-radius: 3px;
         color: #CCCCCC;
     }
+    .filterDesktop > select:hover{
+        cursor: pointer;
+    }
     .search{
         margin-top: 40px;
         width:360px;

@@ -11,6 +11,40 @@ body{
 
 }
 /* phones */
+    .mobileNav{
+        position: fixed;
+        top: 0px;
+        z-index: 50;
+        width: 400px;
+        height: 500%;
+        background-color: #111111;
+        float: none;
+        margin-top: 0px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        color: #BBBBBB;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        visibility: hidden;
+    }
+    .mobileNav > a{
+        margin-top: 50px;
+    }
+    #displayPhones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 200px;
+        height: 270px;
+        background-color: #222222;
+        margin-top: 0.75rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+    }
     .heroContainer{
         width: 100vw;
         height: 100vh;
@@ -128,6 +162,9 @@ body{
 
     /* desktop */
 @media only screen and (min-width: 760px){
+    .mobileNac{
+        visibility: hidden;
+    }
     .nav{
         width: 100vw;
         height: 50px;

@@ -6,12 +6,14 @@ for (let i = 0; i < Object.keys(phones).length; i++) {
   let phone = document.createElement("div");
   phone.innerHTML = `
     <div class="card">
-    <image src="./images/phones/${phones[i].ext}" class="cardImage" style="width:100px">
+    <div class="cardImgCon">
+      <image src="./images/phones/${phones[i].ext}" class="cardImage">
+    </div>
     <h3>${phones[i].name}</h3>
-    <p>${phones[i].brand}</p>
-    <p>${phones[i].memory}</p>
-    <p>${phones[i].cost}</p>
-    <p>${phones[i].colors}</p>
+    <p><span class="cardDesc">Brand:</span>${phones[i].brand}</p>
+    <p><span class="cardDesc">Memory:</span>${phones[i].memory}</p>
+    <p><span class="cardDesc">Price:</span> £${phones[i].cost}</p>
+    <p class="cardDesc">Colors:<span class="colors">${phones[i].colors}</span></p>
     </div>
     `;
   displayPhones.appendChild(phone);

@@ -6,7 +6,7 @@ const phones = {
     name: "Iphone 12 Pro",
     memory: "512GB",
     cost: 1149,
-    colors: ["gold", "silver", "gray"],
+    colors: ["gold", "silver", " gray"],
     ext: "Iphone12Pro.png",
   },
   1: {
@@ -22,7 +22,7 @@ const phones = {
     name: "Iphone 13 mini",
     memory: "256GB",
     cost: 729,
-    colors: ["blue", "white", "pink", "black"],
+    colors: ["blue", "white", " pink", "black"],
     ext: "Iphone13Mini.png",
   },
   3: {
@@ -30,7 +30,7 @@ const phones = {
     name: "Pixel 6A",
     memory: "128GB",
     cost: 399,
-    colors: ["white", "green", "black"],
+    colors: ["white", "green", " black"],
     ext: "Pixel6A.png",
   },
   4: {
@@ -46,7 +46,7 @@ const phones = {
     name: "Galaxy S22 Plus",
     memory: "128GB",
     cost: 949,
-    colors: ["green", "black", "white", "pink"],
+    colors: ["green", "black", " white", "pink"],
     ext: "GalaxyS22Plus.png",
   },
   6: {
@@ -78,7 +78,7 @@ const phones = {
     name: "105",
     memory: "4 MB",
     cost: 25,
-    colors: ["black", "blue", "pink"],
+    colors: ["black", "blue", " pink"],
     ext: "Nokia105.png",
   },
 };

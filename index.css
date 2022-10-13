@@ -6,17 +6,34 @@ a,select{
     all: unset;
 }
 body{
-    overflow-x: hidden;
     background-color: #111111;
-
+    overflow-x: hidden;
 }
 /* phones */
+    .cardImage{
+        width: 150px;
+    }
+    .cardImgCon{
+        width: 150px;
+        height: 150px;
+        padding-left:25px;
+        padding-right:25px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #555;
+        border-radius: 5px;
+    }
+    .colors{
+        max-width: 100px;
+        padding-left: 10px;
+        color: #BBBBBB;
+    }
     .mobileNav{
         position: fixed;
         top: 0px;
         z-index: 50;
-        width: 400px;
-        height: 500%;
+        width: 100vw;
+        height: 500vh;
         background-color: #111111;
         float: none;
         margin-top: 0px;
@@ -39,11 +56,30 @@ body{
     }
     .card{
         width: 200px;
-        height: 270px;
+        height: 350px;
         background-color: #222222;
         margin-top: 0.75rem;
         border-radius: 5px;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    .card:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: all 0.1s;
+    }
+    .cardDesc{
+        color: #888888;
+        font-weight: 600;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .card >h3{
+        text-decoration: underline;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+    .card >*{
+        margin-bottom: 10px;
     }
     .heroContainer{
         width: 100vw;
@@ -142,9 +178,6 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
-    .search{
-        visibility: hidden;
-    }
     #filterButton{
         width: 100px;
         height: 30px;
@@ -166,7 +199,7 @@ body{
         visibility: hidden;
     }
     .nav{
-        width: 100vw;
+        width: 99vw;
         height: 50px;
         position: relative;
         padding-top: 20px;
@@ -270,11 +303,12 @@ body{
         margin-top: 40px;
     }
     .filterDesktop{
-        width: 1200px;
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
         visibility: visible;
         display: flex;
+        flex-wrap: wrap;
     }
     .filterDesktop > label{
         margin-left: 30px;
@@ -290,15 +324,17 @@ body{
         border-radius: 3px;
         color: #CCCCCC;
     }
+    .filterDesktop * {
+        margin-top: 10px;
+    }
     .filterDesktop > select:hover{
         cursor: pointer;
     }
     .search{
-        margin-top: 40px;
         width:360px;
-        margin-left: auto;
-        margin-right: auto;
-        visibility: visible;
+        margin-left: 10px;
+        margin-top: 0px;
+        padding-left: 20px;
     }
     #phoneSearch{
         width: 150px;
@@ -335,7 +371,7 @@ body{
         height: 10px;
         border-radius: 10px;
         background: #222222;
-        margin-top: 5px;
+        margin-top: 15px;
     }
     input[type="range"]::-webkit-slider-thumb {
         -webkit-appearance: none;

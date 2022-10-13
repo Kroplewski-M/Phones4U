@@ -4,8 +4,8 @@ const diplayPhones = document.querySelector("#displayPhones");
 
 for (let i = 0; i < Object.keys(phones).length; i++) {
   let phone = document.createElement("div");
+  phone.classList.add("card");
   phone.innerHTML = `
-    <div class="card">
     <div class="cardImgCon">
       <image src="./images/phones/${phones[i].ext}" class="cardImage">
     </div>
@@ -14,7 +14,6 @@ for (let i = 0; i < Object.keys(phones).length; i++) {
     <p><span class="cardDesc">Memory:</span>${phones[i].memory}</p>
     <p><span class="cardDesc">Price:</span> £${phones[i].cost}</p>
     <p class="cardDesc">Colors:<span class="colors">${phones[i].colors}</span></p>
-    </div>
     `;
   displayPhones.appendChild(phone);
 }

@@ -16,6 +16,10 @@ maxSlider.oninput = function () {
   maxPrice.innerHTML = "£" + maxSlider.value;
 };
 
+//GET REST OF FILTERS
+let brand = document.querySelector("#selectBrand");
+let color = document.querySelector("colors");
+let memory = document.querySelector("memoryBtn");
 //DISPLAY PHONES
 const diplayPhones = document.querySelector("#displayPhones");
 

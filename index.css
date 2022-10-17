@@ -408,5 +408,20 @@ body{
     #momoryBtn{
         max-width: 60px;
     }
+    footer{
+        height: 50px;
+        background-color: black;
+        color: #555;
+        text-align: center;
+        padding-top: 20px;
+    }
+    footer >p{
+        margin-bottom: 10px;
+    }
+    footer > a:hover{
+        cursor: pointer;
+    }
+
+
 
 }

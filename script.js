@@ -1,5 +1,22 @@
 import { phones } from "/phones.js";
 
+//SET MIN PRICE
+let minPrice = document.querySelector("#minPrice");
+let minSlider = document.querySelector("#minPriceSlider");
+
+minSlider.oninput = function () {
+  minPrice.innerHTML = "£" + minSlider.value;
+};
+
+//SET MAX PRICE
+let maxPrice = document.querySelector("#maxPrice");
+let maxSlider = document.querySelector("#maxPriceSlider");
+
+maxSlider.oninput = function () {
+  maxPrice.innerHTML = "£" + maxSlider.value;
+};
+
+//DISPLAY PHONES
 const diplayPhones = document.querySelector("#displayPhones");
 
 for (let i = 0; i < Object.keys(phones).length; i++) {

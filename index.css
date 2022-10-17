@@ -399,5 +399,14 @@ body{
     #filterButton{
         visibility: hidden;
     }
+    #minPrice{
+        padding-left: 10px;
+    }
+    #maxPrice{
+        padding-left: 10px;
+    }
+    #momoryBtn{
+        max-width: 60px;
+    }
 
 }

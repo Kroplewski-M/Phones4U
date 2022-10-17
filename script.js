@@ -24,6 +24,8 @@ maxSlider.oninput = function () {
 let brand = document.querySelector("#selectBrand");
 let color = document.querySelector("#colors");
 let memory = document.querySelector("#memoryBtn");
+let search = document.querySelector("#phoneSearch");
+let searchButton = document.querySelector("#phoneButton");
 
 //FILTER
 brand.addEventListener("change", () => {
@@ -35,6 +37,26 @@ color.addEventListener("change", () => {
 memory.addEventListener("change", () => {
   renderPhones();
 });
+search.addEventListener("keyup", function (event) {
+  console.log(event);
+  if (event.key === "Enter") {
+    event.preventDefault();
+    renderPhones();
+  }
+  if (event.key === "Backspace") {
+    if (search.value == "") {
+      renderPhones();
+    }
+  }
+});
+searchButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  renderPhones();
+});
+
+function uppercase() {
+  return search.value[0].toUpperCase() + search.value.slice(1);
+}
 //FILTER PHONE OBJECT
 const filterPhones = Object.entries(phones);
 function filter() {
@@ -44,7 +66,8 @@ function filter() {
       value.cost < maxSlider.value &&
       (memory.value != "any" ? value.memory == memory.value : value.memory) &&
       (brand.value != "any" ? value.brand == brand.value : value.brand) &&
-      (color.value != "any" ? value.colors.includes(color.value) : value.colors)
+      (color.value != "any" ? value.colors.includes(color.value) : value.colors) &&
+      (search.value != "" ? value.name.includes(uppercase()) || value.brand.includes(uppercase()) : value.name)
     );
   });
   if (filtered.length == 0) {

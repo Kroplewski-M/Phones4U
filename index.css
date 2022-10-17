@@ -395,20 +395,6 @@ body{
     #filterButton{
         visibility: hidden;
     }
-    footer{
-        height: 50px;
-        background-color: black;
-        color: #555;
-        text-align: center;
-        padding-top: 20px;
-    }
-    footer >p{
-        margin-bottom: 10px;
-    }
-    footer > a:hover{
-        cursor: pointer;
-    }
-
     #minPrice{
         padding-left: 10px;
     }
@@ -431,7 +417,4 @@ body{
     footer > a:hover{
         cursor: pointer;
     }
-
-
-
 }

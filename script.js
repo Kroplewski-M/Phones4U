@@ -167,3 +167,35 @@ closeMobile.addEventListener("click", () => {
 mobileMenuBtn.addEventListener("click", () => {
   showMenuFlip();
 });
+
+const mobileSamsung = document.querySelector("#mobileSamsung");
+const mobileIphone = document.querySelector("#mobileIphone");
+const mobileGoogle = document.querySelector("#mobileGoogle");
+const mobileMotorolla = document.querySelector("#mobileMotorolla");
+const mobileNokia = document.querySelector("#mobileNokia");
+
+mobileSamsung.addEventListener("click", () => {
+  brand.value = "Samsung";
+  renderPhones();
+  showMenuFlip();
+});
+mobileIphone.addEventListener("click", () => {
+  brand.value = "Apple";
+  renderPhones();
+  showMenuFlip();
+});
+mobileGoogle.addEventListener("click", () => {
+  brand.value = "Google";
+  renderPhones();
+  showMenuFlip();
+});
+mobileMotorolla.addEventListener("click", () => {
+  brand.value = "Motorolla";
+  renderPhones();
+  showMenuFlip();
+});
+mobileNokia.addEventListener("click", () => {
+  brand.value = "Nokia";
+  renderPhones();
+  showMenuFlip();
+});

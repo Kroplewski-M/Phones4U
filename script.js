@@ -110,3 +110,37 @@ function renderPhones() {
   }
 }
 renderPhones();
+
+//DESKTOP NAV
+const samsung = document.querySelector("#samsung");
+const iphone = document.querySelector("#iphone");
+const google = document.querySelector("#google");
+const motorolla = document.querySelector("#motorolla");
+const nokia = document.querySelector("#nokia");
+
+samsung.addEventListener("click", () => {
+  brand.value = "Samsung";
+  renderPhones();
+});
+iphone.addEventListener("click", () => {
+  brand.value = "Apple";
+  renderPhones();
+});
+google.addEventListener("click", () => {
+  brand.value = "Google";
+  renderPhones();
+});
+motorolla.addEventListener("click", () => {
+  brand.value = "Motorolla";
+  renderPhones();
+});
+nokia.addEventListener("click", () => {
+  brand.value = "Nokia";
+  renderPhones();
+});
+
+//SHOP BUTTON
+const shopNowBtn = document.querySelector("#shopNow");
+shopNowBtn.addEventListener("click", () => {
+  document.getElementById("main").scrollIntoView();
+});

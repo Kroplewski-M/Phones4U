@@ -199,3 +199,20 @@ mobileNokia.addEventListener("click", () => {
   renderPhones();
   showMenuFlip();
 });
+
+//DISPLAY FILTER ON MOBILE
+const filterButton = document.querySelector("#filterButton");
+let showFilter = false;
+const showFilterPhones = document.querySelector("#filter");
+
+function flipFilter() {
+  showFilter = !showFilter;
+  if (showFilter) {
+    showFilterPhones.classList.remove("hideFilter");
+  } else {
+    showFilterPhones.classList.add("hideFilter");
+  }
+}
+filterButton.addEventListener("click", () => {
+  flipFilter();
+});

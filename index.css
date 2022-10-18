@@ -178,8 +178,80 @@ body{
         z-index: 10;
         position: relative;
     }
-    .filterDesktop{
+    .filter{
+        position: fixed;
+        top: 0px;
+        z-index: 50;
+        width: 100vw;
+        height: 500vh;
+        background-color: #111111;
+        float: none;
+        margin-top: 0px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        color: #BBBBBB;
+        font-weight: 600;
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+    .filter > select{
+        background-color: #222222;
+        padding-left: 5px;
+        width: 100px;
+        border-radius: 5px;
+    }
+    #phoneSearch{
+        width: 130px;
+        height: 20px;
+        background-color: #222222;
+        padding-left: 5px;
+        border-radius: 5px;
+        border: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #phoneButton{
+        width: 70px;
+        height: 30px;
+        background-color: #222222;
+        border: 0;
+        border-radius: 5px;
+        color: #EEEEEE;
+    }
+    #minPriceSlider{
+        width: 50%;
+    }
+    #maxPriceSlider{
+        width: 50%;
+    }
+    input[type="range"] {
+        -webkit-appearance: none;
+        height: 10px;
+        border-radius: 10px;
+        background: #222222;
+        margin-top: 15px;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: #BBBBBB;
+        cursor: ew-resize;
+        box-shadow: 0 0 2px 0 #555;
+    }
+    .filter > *{
+        margin-bottom: 10px;
+    }
+    .hideFilter{
         visibility: hidden;
+    }
+    .filterClose{
+        width: 40px;
+        position: absolute;
+        right: 40px;
+        top: 10px;
     }
     .main{
         min-height: 100vh;
@@ -199,6 +271,11 @@ body{
         border-radius: 3px;
         color: #111111;
         font-weight: 600;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    #filterButton:hover{
+        cursor: pointer;
     }
     .mobileFilter{
         width: 100px;
@@ -339,19 +416,28 @@ body{
         margin-top: 40px;
         margin-bottom: 100px;
     }
-    .filterDesktop{
+    .filter{
         max-width: 1200px;
+        height: 100px;
         margin-left: auto;
         margin-right: auto;
         visibility: visible;
         display: flex;
         flex-wrap: wrap;
+        position: relative;
+        background-color: transparent;
+        flex-direction: row;
+        font-size: 16px;
+        text-align: left;
+        font-weight: 400;
+        padding-top: 0;
+
     }
-    .filterDesktop > label{
+    .filter > label{
         margin-left: 30px;
         margin-right: 10px;
     }
-    .filterDesktop > select{
+    .filter > select{
         width: 80px;
         height: 20px;
         padding-left: 10px;
@@ -361,11 +447,17 @@ body{
         border-radius: 3px;
         color: #CCCCCC;
     }
-    .filterDesktop * {
+    .filter * {
         margin-top: 10px;
     }
-    .filterDesktop > select:hover{
+    .filter> select:hover{
         cursor: pointer;
+    }
+    .hideFilter{
+        visibility: visible;
+    }
+    .filterClose{
+        visibility: hidden;
     }
     .search{
         width:360px;
@@ -402,22 +494,6 @@ body{
     }
     #phoneButton:active{
         transform: translateY(2px);
-    }
-    input[type="range"] {
-        -webkit-appearance: none;
-        height: 10px;
-        border-radius: 10px;
-        background: #222222;
-        margin-top: 15px;
-    }
-    input[type="range"]::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background: #BBBBBB;
-        cursor: ew-resize;
-        box-shadow: 0 0 2px 0 #555;
     }
     #filterButton{
         visibility: hidden;

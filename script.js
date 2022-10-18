@@ -144,3 +144,26 @@ const shopNowBtn = document.querySelector("#shopNow");
 shopNowBtn.addEventListener("click", () => {
   document.getElementById("main").scrollIntoView();
 });
+
+//MOBILE BUTTON WORK
+
+//MOBILE NAV
+const mobileMenuBtn = document.querySelector("#mobileMenuBtn");
+const mobileNav = document.querySelector("#mobileNav");
+const closeMobile = document.querySelector("#closeMobile");
+let showMenu = false;
+
+function showMenuFlip() {
+  showMenu = !showMenu;
+  if (showMenu) {
+    mobileNav.classList.remove("hideMobileNav");
+  } else {
+    mobileNav.classList.add("hideMobileNav");
+  }
+}
+closeMobile.addEventListener("click", () => {
+  showMenuFlip();
+});
+mobileMenuBtn.addEventListener("click", () => {
+  showMenuFlip();
+});

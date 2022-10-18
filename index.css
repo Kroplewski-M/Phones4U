@@ -44,7 +44,19 @@ body{
         font-size: 30px;
         text-align: center;
         font-weight: 600;
+        padding-top: 40px;
+    }
+    .hideMobileNav{
         visibility: hidden;
+    }
+    .closeMobile{
+        width: 30px;
+        position: absolute;
+        right: 20px;
+        margin-top: -20px;
+    }
+    .closeMobile:hover{
+        cursor: pointer;
     }
     .mobileNav > a{
         margin-top: 50px;
@@ -119,6 +131,7 @@ body{
         margin-top: -50px;
         margin-right: 25px;
     }
+
     .mobileMenu:hover{
         cursor: pointer;
     }

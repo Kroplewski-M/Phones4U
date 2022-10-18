@@ -49,10 +49,6 @@ search.addEventListener("keyup", function (event) {
     }
   }
 });
-searchButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  renderPhones();
-});
 
 function uppercase() {
   return search.value[0].toUpperCase() + search.value.slice(1);
@@ -204,6 +200,7 @@ mobileNokia.addEventListener("click", () => {
 const filterButton = document.querySelector("#filterButton");
 let showFilter = false;
 const showFilterPhones = document.querySelector("#filter");
+const closeFilterMobile = document.querySelector("#closeFilter");
 
 function flipFilter() {
   showFilter = !showFilter;
@@ -215,4 +212,16 @@ function flipFilter() {
 }
 filterButton.addEventListener("click", () => {
   flipFilter();
+});
+closeFilterMobile.addEventListener("click", () => {
+  flipFilter();
+});
+
+//SEARCH MOBILES
+searchButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  renderPhones();
+  if (showFilter) {
+    flipFilter();
+  }
 });

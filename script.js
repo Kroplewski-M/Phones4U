@@ -225,3 +225,11 @@ searchButton.addEventListener("click", function (event) {
     flipFilter();
   }
 });
+
+addEventListener("resize", (event) => {
+  if (showFilter) {
+    if (window.innerWidth > 760) {
+      flipFilter();
+    }
+  }
+});

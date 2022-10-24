@@ -10,14 +10,13 @@ body{
     overflow-x: hidden;
 }
 
-
 /* phones */
 .filterContainer{
     position: fixed;
     top: 0px;
     z-index: 50;
     width: 100vw;
-    height: 500vh;
+    height: 100vh;
     background-color: #111111;
     float: none;
     margin-top: 0px;
@@ -28,6 +27,99 @@ body{
     font-weight: 600;
     padding-top: 100px;
     padding-left: 20px;
+    overflow-y: scroll;
+}
+.filterContainer > div{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.filterSection{
+    width: 250px;
+    height: 220px;
+    background-color: #222222;
+    padding-left: 10px;
+}
+label{
+    color: gray;
+}
+.inputContainer > *{
+    margin-bottom: 10px;
+}
+.inputContainer{
+    width: 150px;
+}
+.inputContainer > input{
+    margin-right: 20px;
+}
+.inputContainerColor{
+    width:120px;
+}
+.memory{
+    height: 280px;
+}
+.inputContainerMemory{
+    width: 120px;
+}
+.inputContainerMemory > input{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.minPriceContainer{
+    margin-top: 20px;
+    display: flex;
+}
+.minPriceContainer > input{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.maxPriceContainer{
+    display: flex;
+    margin-top: 20px;
+}
+.maxPriceContainer > input{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.price{
+    min-height: 300px;
+    min-width: 280px;
+}
+.filterColor{
+    height: 270px;
+}
+.inputContainerColor > input{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+#search{
+    width: 220px;
+    height: 40px;
+    font-weight: 600;
+    background-color: #222222;
+    border: 0;
+    margin-right: 10px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+#searchBtn{
+    width: 90px;
+    height: 35px;
+    background: #333333;
+    border: 0;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.filterTitle{
+    margin-bottom: 10px;
+    margin-top: -50px;
+}
+.filterHeader{
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
 .hideFilter{
     visibility: hidden;
@@ -384,45 +476,33 @@ body{
         margin-top: 0px;
     }
     .filterContainer{
-        display: flex;
-        flex-direction: column;
+        position: relative;
+        width: auto;
+        height: auto;
+        background-color: transparent;
         float: left;
         margin-left: 20px;
         margin-right: 50px;
         visibility: visible;
-    }
-    .filterContainer > div{
-        margin-bottom: 10px;
-        border-radius: 5px;
-    }
-    .filterSection{
-        width: 250px;
-        height: 200px;
-        background-color: #222222;
-        padding-left: 10px;
-    }
-    .inputContainer > *{
-        margin-bottom: 10px;
+        padding-top: 0px;
+        padding-left: 0px;
+        overflow: visible;
     }
     .filterTitle{
-        margin-bottom: 10px;
+        margin-top: 0px;
     }
-    .filterHeader{
-        margin-top: 10px;
-        padding-bottom: 10px;
+    .filterContainer > div{
+        font-size: 20px;
     }
     .inputContainer{
-        width: 220px;
+        width: 230px;
     }
-    .inputContainer > input{
-        margin-right: 20px;
+    .filterColor{
+        height: auto;
+        padding-bottom: 10px ;
     }
     .inputContainerColor{
-        width:180px
-    }
-    .inputContainerColor > input{
-        margin-right: 20px;
-        margin-bottom: 10px;
+        width:190px
     }
     .inputContainerMemory{
         width: 190px;
@@ -431,45 +511,26 @@ body{
         margin-right: 20px;
         margin-bottom: 10px;
     }
-    .minPriceContainer{
-        margin-top: 20px;
-        display: flex;
-    }
-    .minPriceContainer > input{
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 7px;
-    }
-    .maxPriceContainer{
-        display: flex;
-        margin-top: 20px;
-    }
-    .maxPriceContainer > input{
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 7px;
+    .memory{
+        height: auto;
+        padding-bottom: 10px;
     }
     .searchContainter{
         display: flex;
         margin-top: 20px;
     }
+    .price{
+        min-width: auto;
+        min-height: auto;
+    }
     #search{
         width: 170px;
         height: 25px;
-        font-weight: 600;
-        background-color: #222222;
-        border: 0;
-        margin-right: 10px;
-        padding-left: 5px;
+        font-size: 16px;
     }
     #searchBtn{
         width: 70px;
         height: 25px;
-        background: #333333;
-        border: 0;
-        color: white;
-        font-weight: 600;
-        border-radius: 5px;
     }
     #searchBtn:hover{
         cursor: pointer;

@@ -47,20 +47,75 @@
         <!--FILTER-->
         <div class="filterContainer">
             <h1 class="filterTitle">Filter:</h1>
+            <div class="searchContainter">
+                <input type="text" name="search" id="search" placeholder="Dream phone...">
+                <button id="searchBtn">Search!</button>
+            </div>
             <div class="brand filterSection">
                 <h3 class="filterHeader">Brand:</h3>
+                <div class="inputContainer">
+                    <label for="brandSamsung">Samsung</label>
+                    <input type="checkbox" id="brandSamsung" value="Samsung">
+                    <label for="brandApple">Apple</label>
+                    <input type="checkbox" id="brandApple" value="Apple">
+                    <label for="brandGoogle">Google</label>
+                    <input type="checkbox" id="brandGoogle" value="Google">
+                    <label for="brandMotorolla">Motorolla</label>
+                    <input type="checkbox" id="brandMotorolla" value="Motorolla">
+                    <label for="brandNokia">Nokia</label>
+                    <input type="checkbox" id="brandNokia" value="Nokia">
+                </div>
             </div>
-            <div class="color filterSection">
+            <div class="filterSection">
                 <h3 class="filterHeader">Color:</h3>
-                
+                <div class="color">
+                    <div class="inputContainerColor">
+                        <label for="black">Black</label>
+                        <input type="checkbox" id="black" value="black">
+                        <label for="white">White</label>
+                        <input type="checkbox" id="white" value="white">
+                        <label for="green">Green</label>
+                        <input type="checkbox" id="green" value="green">
+                        <label for="blue">Blue</label>
+                        <input type="checkbox" id="blue" value="blue">
+                        <label for="gold">Gold</label>
+                        <input type="checkbox" id="gold" value="gold">
+                        <label for="silver">Silver</label>
+                        <input type="checkbox" id="Silver" value="Silver">
+                    </div>
+                </div>
             </div>
             <div class="memory filterSection">
                 <h3 class="filterHeader">Memory:</h3>
-                
+                <div class="inputContainerMemory">
+                    <label for="4MB">4MB</label>
+                    <input type="checkbox" id="4MB">
+                    <label for="8GB">8GB</label>
+                    <input type="checkbox" id="8GB">
+                    <label for="16GB">16GB</label>
+                    <input type="checkbox" id="16GB">
+                    <label for="32GB">32GB</label>
+                    <input type="checkbox" id="32GB">
+                    <label for="64GB">64GB</label>
+                    <input type="checkbox" id="64GB">
+                    <label for="128GB">128GB</label>
+                    <input type="checkbox" id="128GB">
+                    <label for="256GB">256GB</label>
+                    <input type="checkbox" id="256GB">
+                </div>
             </div>
             <div class="price filterSection">
                 <h3 class="filterHeader">Price:</h3>
-                
+                <div class="minPriceContainer">
+                    <p>Min: </p>
+                    <input name="minPrice" type="range" max="1200" min="0" step="50" value="1" id="minPrice">
+                    <p>£0</p>
+                </div>
+                <div class="maxPriceContainer">
+                    <p>Max: </p>
+                    <input name="maxPrice" type="range" max="1200" min="0" step="50" value="1200" id="maxPrice">
+                    <p>£1200</p>
+                </div>
             </div>
         </div>
 

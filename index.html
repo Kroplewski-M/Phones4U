@@ -45,51 +45,25 @@
     </section>
     <section class="main" id="main">
         <!--FILTER-->
-        <div class="filter hideFilter" id="filter">
-            <img src="./images/close.png" alt="" class="filterClose" id="closeFilter">
-            <label for="brands">Brand:</label>
-            <select name="brands" id="selectBrand">
-                <option value="any" selected>any</option>
-                <option value="Samsung">Samsung</option>
-                <option value="Apple">Apple</option>
-                <option value="Google">Google</option>
-                <option value="Motorolla">Motorolla</option>
-                <option value="Nokia">Nokia</option>
-            </select>
-            <label for="minPrice">Min Price:</label>
-            <input name="minPrice" type="range" max="1200" min="0" step="50" value="1" id="minPriceSlider">
-            <p id="minPrice">£0</p>
-            <label for="maxPrice">Max Price:</label>
-            <input name="maxPrice" type="range" max="1200" min="0" step="50" value="3000" id="maxPriceSlider">
-            <p id="maxPrice">£1200</p>
-            <label for="colors">Colours:</label>
-            <select name="colors" id="colors">
-                <option value="any" selected>any</option>
-                <option value="black">Black</option>
-                <option value="white">White</option>
-                <option value="green">Green</option>
-                <option value="gold">Gold</option>
-                <option value="silver">Silver</option>
-                <option value="gray">Gray</option>
-                <option value="blue">Blue</option>
-                <option value="pink">Pink</option>
-            </select>
-            <label for="memory">Memory:</label>
-            <select name="memory" id="memoryBtn">
-                <option value="any" selected>any</option>
-                <option value="4MB">4MB</option>
-                <option value="32GB">32GB</option>
-                <option value="64GB">64GB</option>
-                <option value="128GB">128B</option>
-                <option value="256GB">256GB</option>
-                <option value="512GB">512GB</option>
-            </select>
-            <div class="search">
-                <label for="search">Search:</label>
-                <input name="search" type="text" id="phoneSearch">
-                <button id="phoneButton">Find phone</button>
+        <div class="filterContainer">
+            <h1 class="filterTitle">Filter:</h1>
+            <div class="brand filterSection">
+                <h3 class="filterHeader">Brand:</h3>
+            </div>
+            <div class="color filterSection">
+                <h3 class="filterHeader">Color:</h3>
+                
+            </div>
+            <div class="memory filterSection">
+                <h3 class="filterHeader">Memory:</h3>
+                
+            </div>
+            <div class="price filterSection">
+                <h3 class="filterHeader">Price:</h3>
+                
             </div>
         </div>
+
         <!--MOBILE FILTER-->
         <div class="mobileFilter">
             <button id="filterButton">Filter</button>

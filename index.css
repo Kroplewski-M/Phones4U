@@ -178,54 +178,7 @@ body{
         z-index: 10;
         position: relative;
     }
-    .filter{
-        position: fixed;
-        top: 0px;
-        z-index: 50;
-        width: 100vw;
-        height: 500vh;
-        background-color: #111111;
-        float: none;
-        margin-top: 0px;
-        margin-right: 0px;
-        display: flex;
-        flex-direction: column;
-        color: #BBBBBB;
-        font-weight: 600;
-        padding-top: 100px;
-        padding-left: 20px;
-    }
-    .filter > select{
-        background-color: #222222;
-        padding-left: 5px;
-        width: 100px;
-        border-radius: 5px;
-    }
-    #phoneSearch{
-        width: 130px;
-        height: 20px;
-        background-color: #222222;
-        padding-left: 5px;
-        border-radius: 5px;
-        border: 0;
-        margin-left: 10px;
-        margin-right: 10px;
-        color: #EEEEEE;
-    }
-    #phoneButton{
-        width: 70px;
-        height: 30px;
-        background-color: #222222;
-        border: 0;
-        border-radius: 5px;
-        color: #EEEEEE;
-    }
-    #minPriceSlider{
-        width: 50%;
-    }
-    #maxPriceSlider{
-        width: 50%;
-    }
+
     input[type="range"] {
         -webkit-appearance: none;
         height: 10px;
@@ -242,18 +195,6 @@ body{
         cursor: ew-resize;
         box-shadow: 0 0 2px 0 #555;
     }
-    .filter > *{
-        margin-bottom: 10px;
-    }
-    .hideFilter{
-        visibility: hidden;
-    }
-    .filterClose{
-        width: 30px;
-        position: absolute;
-        right: 40px;
-        top: 10px;
-    }
     .main{
         min-height: 100vh;
         width: 400px;
@@ -264,20 +205,7 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
-    #filterButton{
-        width: 100px;
-        height: 30px;
-        background-color: #CCCCCC;
-        border: 0;
-        border-radius: 3px;
-        color: #111111;
-        font-weight: 600;
-        margin-bottom: 20px;
-        margin-top: 30px;
-    }
-    #filterButton:hover{
-        cursor: pointer;
-    }
+
     .mobileFilter{
         width: 100px;
         margin-left: auto;
@@ -417,102 +345,29 @@ body{
         margin-top: 40px;
         margin-bottom: 100px;
     }
-    .filter{
-        max-width: 1200px;
-        height: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        visibility: visible;
+    .mobileFilter{
+        visibility: hidden;
+    }
+    .filterContainer{
         display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        background-color: transparent;
-        flex-direction: row;
-        font-size: 16px;
-        text-align: left;
-        font-weight: 400;
-        padding-top: 0;
-
+        flex-direction: column;
+        float: left;
+        margin-left: 20px;
     }
-    .filter > label{
-        margin-left: 30px;
-        margin-right: 10px;
+    .filterContainer > div{
+        margin-bottom: 10px;
+        border-radius: 5px;
     }
-    .filter > select{
-        width: 80px;
-        height: 20px;
-        padding-left: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+    .filterSection{
+        width: 300px;
+        height: 300px;
         background-color: #222222;
-        border-radius: 3px;
-        color: #CCCCCC;
     }
-    .filter * {
+    .filterTitle{
+        margin-bottom: 10px;
+    }
+    .filterHeader{
+        margin-left: 10px;
         margin-top: 10px;
     }
-    .filter> select:hover{
-        cursor: pointer;
-    }
-    .hideFilter{
-        visibility: visible;
-    }
-    .filterClose{
-        visibility: hidden;
-    }
-    #minPriceSlider{
-        width: 150px;
-    }
-    #maxPriceSlider{
-        width: 150px;
-    }
-    .search{
-        width:360px;
-        margin-left: 10px;
-        margin-top: 0px;
-        padding-left: 20px;
-    }
-    #phoneSearch{
-        width: 150px;
-        height: 30px;
-        border-radius: 3px;
-        padding-left: 5px;
-        background-color: #222222;
-        color: #CCCCCC;
-        border:0px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .price{
-        margin-left: 10px;
-    }
-    #phoneButton{
-        width: 90px;
-        height: 30px;
-        font-weight: 600;
-        background-color: #EEEEEE;
-        color: #111111;
-        border: 0px;
-        border-radius: 3px;
-    }
-    #phoneButton:hover{
-        background-color: #BBBBBB;
-        cursor: pointer;
-    }
-    #phoneButton:active{
-        transform: translateY(2px);
-    }
-    #filterButton{
-        visibility: hidden;
-    }
-    #minPrice{
-        padding-left: 10px;
-    }
-    #maxPrice{
-        padding-left: 10px;
-    }
-    #memoryBtn{
-        max-width: 60px;
-    }
-
 }

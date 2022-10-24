@@ -362,6 +362,7 @@ body{
     }
     .mobileFilter{
         visibility: hidden;
+        margin-top: 0px;
     }
     .filterContainer{
         display: flex;

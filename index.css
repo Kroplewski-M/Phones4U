@@ -16,19 +16,16 @@ body{
     top: 0px;
     z-index: 50;
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     background-color: #111111;
-    float: none;
-    margin-top: 0px;
-    margin-right: 0px;
     display: flex;
     flex-direction: column;
     color: #BBBBBB;
     font-weight: 600;
-    padding-top: 100px;
     padding-left: 20px;
     overflow-y: scroll;
     overflow-x: hidden;
+
 }
 .filterContainer > div{
     margin-bottom: 10px;
@@ -59,6 +56,7 @@ label{
 }
 .memory{
     height: 280px;
+    margin-bottom: 50px;
 }
 .inputContainerMemory{
     width: 120px;
@@ -86,7 +84,7 @@ label{
     margin-top: 7px;
 }
 .price{
-    min-height: 300px;
+    min-height: 150px;
     min-width: 280px;
 }
 .filterColor{
@@ -118,7 +116,7 @@ label{
 }
 .filterTitle{
     margin-bottom: 10px;
-    margin-top: -50px;
+    margin-top: 20px;
 }
 .filterHeader{
     margin-top: 10px;
@@ -492,6 +490,9 @@ label{
         padding-top: 0px;
         padding-left: 0px;
         overflow: visible;
+    }
+    .filterSection{
+        height: 150px;
     }
     .filterTitle{
         margin-top: 0px;

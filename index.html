@@ -48,20 +48,20 @@
         <div class="filterContainer hideFilter" id="filter">
             <h1 class="filterTitle">Filter:</h1>
             <div class="searchContainter">
-                <input type="text" name="search" id="search" placeholder="Dream phone...">
-                <button id="searchBtn">Search!</button>
+                <input type="text" name="search" id="search" placeholder="Enter dream phone...">
+                <button id="searchBtn">Filter!</button>
             </div>
             <div class="price filterSection">
                 <h3 class="filterHeader">Price:</h3>
                 <div class="minPriceContainer">
                     <p>Min: </p>
                     <input name="minPrice" type="range" max="1200" min="0" step="50" value="1" id="minPrice">
-                    <p>£0</p>
+                    <p id="minPriceValue">£0</p>
                 </div>
                 <div class="maxPriceContainer">
                     <p>Max: </p>
                     <input name="maxPrice" type="range" max="1200" min="0" step="50" value="1200" id="maxPrice">
-                    <p>£1200</p>
+                    <p id="maxPriceValue">£1200</p>
                 </div>
             </div>
             <div class="brand filterSection">
@@ -102,19 +102,19 @@
                 <h3 class="filterHeader">Memory:</h3>
                 <div class="inputContainerMemory">
                     <label for="4MB">4MB</label>
-                    <input type="checkbox" id="4MB">
+                    <input type="checkbox" id="4MB" value="4MB">
                     <label for="8GB">8GB</label>
-                    <input type="checkbox" id="8GB">
+                    <input type="checkbox" id="8GB" value="8GB">
                     <label for="16GB">16GB</label>
-                    <input type="checkbox" id="16GB">
+                    <input type="checkbox" id="16GB" value="16GB">
                     <label for="32GB">32GB</label>
-                    <input type="checkbox" id="32GB">
+                    <input type="checkbox" id="32GB" value="32GB">
                     <label for="64GB">64GB</label>
-                    <input type="checkbox" id="64GB">
+                    <input type="checkbox" id="64GB" value="64GB">
                     <label for="128GB">128GB</label>
-                    <input type="checkbox" id="128GB">
+                    <input type="checkbox" id="128GB" value="128GB">
                     <label for="256GB">256GB</label>
-                    <input type="checkbox" id="256GB">
+                    <input type="checkbox" id="256GB" value="256GB">
                 </div>
             </div>
         </div>

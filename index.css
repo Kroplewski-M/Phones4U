@@ -482,14 +482,16 @@ label{
         position: relative;
         width: auto;
         height: auto;
-        background-color: transparent;
+        background-color: #333333;
         float: left;
         margin-left: 20px;
         margin-right: 50px;
         visibility: visible;
         padding-top: 0px;
-        padding-left: 0px;
+        padding: 20px;
+        border-radius: 5px;
         overflow: visible;
+        margin-top: 60px;
     }
     .filterSection{
         height: 150px;

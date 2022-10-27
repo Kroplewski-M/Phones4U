@@ -83,14 +83,37 @@ function filterAllPhones() {
   memory = [];
 
   //ADD FILTERS
+
+  //BRANDS
   const phoneBrands = Array.from(document.querySelectorAll(".brands"));
   phoneBrands.forEach(function (brand) {
     if (brand.checked) {
       brands.push(brand.value);
     }
   });
+  //MEMORY
+  const phoneMemory = Array.from(document.querySelectorAll(".memory"));
+  phoneMemory.forEach(function (mem) {
+    if (mem.checked) {
+      memory.push(mem.value);
+    }
+  });
+  //COLORS
+  const phoneColors = Array.from(document.querySelectorAll(".colors"));
+  phoneColors.forEach(function (color) {
+    if (color.checked) {
+      colors.push(color.value);
+    }
+  });
 
   console.log(brands);
+  console.log(memory);
+  console.log(colors);
+
+  const phoneArr = Object.entries(phones);
+  phoneArr.forEach(function (phone) {
+    console.log(phone[1]);
+  });
 }
 
 let searchBtn = document.querySelector("#searchBtn");

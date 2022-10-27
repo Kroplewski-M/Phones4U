@@ -85,10 +85,21 @@ function filterAllPhones() {
       }
     }
   }
-  console.log(filteredItems);
+  //console.log(filteredItems.values());
+  for (let i = 0; i < Object.keys(phones).length; i++) {
+    // if (Object.values(phones[i]).includes(filteredItems[0])) {
+    //   console.log(phones[i]);
+    // }
+    // if (Object.values(phones[i]).every((value) => value == "Samsung")) {
+    //   console.log(phones[i]);
+    // }
+    if (filteredItems.every((value) => Object.values(phones[i]).includes(value))) {
+      console.log(phones[i]);
+    }
+  }
 }
 
 let searchBtn = document.querySelector("#searchBtn");
 searchBtn.addEventListener("click", () => {
-  filterAllPhones();
+  console.log(filterAllPhones());
 });

@@ -72,34 +72,28 @@ for (let i = 0; i < Object.keys(phones).length; i++) {
 }
 
 //FILTER
-let filteredItems = [];
-const filterPhones = Object.entries(phones);
+let brands = [];
+let colors = [];
+let memory = [];
 
 function filterAllPhones() {
-  filteredItems = [];
-  let inputs = document.getElementsByTagName("input");
-  for (let i = 0; i < inputs.length; i++) {
-    if (inputs[i].type == "checkbox") {
-      if (inputs[i].checked == true) {
-        filteredItems.push(inputs[i].value.toString());
-      }
+  //RESET ALL FILTERS
+  brands = [];
+  colors = [];
+  memory = [];
+
+  //ADD FILTERS
+  const phoneBrands = Array.from(document.querySelectorAll(".brands"));
+  phoneBrands.forEach(function (brand) {
+    if (brand.checked) {
+      brands.push(brand.value);
     }
-  }
-  //console.log(filteredItems.values());
-  for (let i = 0; i < Object.keys(phones).length; i++) {
-    // if (Object.values(phones[i]).includes(filteredItems[0])) {
-    //   console.log(phones[i]);
-    // }
-    // if (Object.values(phones[i]).every((value) => value == "Samsung")) {
-    //   console.log(phones[i]);
-    // }
-    if (filteredItems.every((value) => Object.values(phones[i]).includes(value))) {
-      console.log(phones[i]);
-    }
-  }
+  });
+
+  console.log(brands);
 }
 
 let searchBtn = document.querySelector("#searchBtn");
 searchBtn.addEventListener("click", () => {
-  console.log(filterAllPhones());
+  filterAllPhones();
 });

@@ -76,7 +76,7 @@ const phones = {
   9: {
     brand: "Nokia",
     name: "105",
-    memory: "4 MB",
+    memory: "4MB",
     cost: 25,
     colors: ["black", "blue", "pink"],
     ext: "Nokia105.png",

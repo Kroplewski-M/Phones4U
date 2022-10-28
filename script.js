@@ -53,35 +53,39 @@ maxPrice.addEventListener("input", () => {
 });
 
 const diplayPhones = document.querySelector("#displayPhones");
-
-for (let i = 0; i < Object.keys(phones).length; i++) {
-  var cols = phones[i].colors.join(", ");
-  let phone = document.createElement("div");
-  phone.classList.add("card");
-  phone.innerHTML = `
-    <div class="cardImgCon">
-      <image src="./images/phones/${phones[i].ext}" class="cardImage">
-    </div>
-    <h3>${phones[i].name}</h3>
-    <p><span class="cardDesc">Brand:</span>${phones[i].brand}</p>
-    <p><span class="cardDesc">Memory:</span>${phones[i].memory}</p>
-    <p><span class="cardDesc">Price:</span> £${phones[i].cost}</p>
-    <p class="cardDesc">Colors:<span class="colors">${cols}</span></p>
-    `;
-  displayPhones.appendChild(phone);
+let filtered = [];
+function renderPhones() {
+  diplayPhones.innerHTML = "";
+  for (let i = 0; i < filtered.length; i++) {
+    var cols = phones[i].colors.join(", ");
+    let phone = document.createElement("div");
+    phone.classList.add("card");
+    phone.innerHTML = `
+      <div class="cardImgCon">
+        <image src="./images/phones/${filtered[i].ext}" class="cardImage">
+      </div>
+      <h3>${filtered[i].name}</h3>
+      <p><span class="cardDesc">Brand:</span>${filtered[i].brand}</p>
+      <p><span class="cardDesc">Memory:</span>${filtered[i].memory}</p>
+      <p><span class="cardDesc">Price:</span> £${filtered[i].cost}</p>
+      <p class="cardDesc">Colors:<span class="colors">${cols}</span></p>
+      `;
+    displayPhones.appendChild(phone);
+  }
 }
 
 //FILTER
 let brands = [];
 let colors = [];
 let memory = [];
+let search = document.querySelector("#search");
 
 function filterAllPhones() {
   //RESET ALL FILTERS
   brands = [];
   colors = [];
   memory = [];
-
+  filtered = [];
   //ADD FILTERS
 
   //BRANDS
@@ -106,17 +110,32 @@ function filterAllPhones() {
     }
   });
 
-  console.log(brands);
-  console.log(memory);
-  console.log(colors);
-
   const phoneArr = Object.entries(phones);
   phoneArr.forEach(function (phone) {
-    console.log(phone[1]);
+    brands.length == 0 ? (brands = "all") : "";
+    memory.length == 0 ? (memory = "all") : "";
+    colors.length == 0 ? (colors[0] = "all") : "";
+
+    if (
+      (search.value == phone[1].brand || phone[1].name.includes(search.value) || search.value == "") &&
+      phone[1].cost >= minPrice.value &&
+      phone[1].cost <= maxPrice.value &&
+      (brands.includes(phone[1].brand) || brands == "all") &&
+      (memory.includes(phone[1].memory) || memory == "all") &&
+      (colors.some((value) => phone[1].colors.includes(value)) || colors[0] == "all")
+    ) {
+      filtered.push(phone[1]);
+    }
   });
+  renderPhones();
 }
 
 let searchBtn = document.querySelector("#searchBtn");
 searchBtn.addEventListener("click", () => {
   filterAllPhones();
+  console.log(filtered);
 });
+
+//INIT
+filterAllPhones();
+console.log(filtered);

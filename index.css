@@ -63,7 +63,7 @@ label{
 }
 .inputContainerMemory > input{
     margin-right: 20px;
-    margin-bottom: 10px;
+
 }
 .minPriceContainer{
     margin-top: 20px;
@@ -114,6 +114,12 @@ label{
     color: black;
     font-weight: bold;
     border-radius: 5px;
+}
+#closeFilterMobile{
+    float: right;
+    position: absolute;
+    right: 35px;
+    top: 10px;
 }
 .filterTitle{
     margin-bottom: 10px;
@@ -544,4 +550,10 @@ label{
     #searchBtn:hover{
         cursor: pointer;
     }   
+    .closeMobile{
+        visibility: hidden;
+    }
+    #closeFilterMobile{
+        visibility: hidden;
+    }
 }

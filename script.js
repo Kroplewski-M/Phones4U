@@ -5,15 +5,17 @@ const mobileNav = document.querySelector("#mobileNav");
 const closeMobileNav = document.querySelector("#closeMobile");
 const filterButton = document.querySelector("#filterButton");
 const filter = document.querySelector("#filter");
-
+const menu = document.querySelector("#menu");
 //SHOW MOBILE MENUS
 let showMobileNav = false;
 let showMobileFilter = false;
 function toggleMobileNav() {
   if (showMobileNav) {
-    mobileNav.classList.remove("hideMobileNav");
+    menu.classList.remove("desktopMenu");
+    menu.classList.add("mobileNav");
   } else {
-    mobileNav.classList.add("hideMobileNav");
+    menu.classList.remove("mobileNav");
+    menu.classList.add("desktopMenu");
   }
 }
 function toggleMobileFilter() {
@@ -56,21 +58,27 @@ const diplayPhones = document.querySelector("#displayPhones");
 let filtered = [];
 function renderPhones() {
   diplayPhones.innerHTML = "";
-  for (let i = 0; i < filtered.length; i++) {
-    var cols = phones[i].colors.join(", ");
-    let phone = document.createElement("div");
-    phone.classList.add("card");
-    phone.innerHTML = `
-      <div class="cardImgCon">
-        <image src="./images/phones/${filtered[i].ext}" class="cardImage">
-      </div>
-      <h3>${filtered[i].name}</h3>
-      <p><span class="cardDesc">Brand:</span>${filtered[i].brand}</p>
-      <p><span class="cardDesc">Memory:</span>${filtered[i].memory}</p>
-      <p><span class="cardDesc">Price:</span> £${filtered[i].cost}</p>
-      <p class="cardDesc">Colors:<span class="colors">${cols}</span></p>
-      `;
-    displayPhones.appendChild(phone);
+  if (filtered.length > 0) {
+    for (let i = 0; i < filtered.length; i++) {
+      var cols = phones[i].colors.join(", ");
+      let phone = document.createElement("div");
+      phone.classList.add("card");
+      phone.innerHTML = `
+        <div class="cardImgCon">
+          <image src="./images/phones/${filtered[i].ext}" class="cardImage">
+        </div>
+        <h3>${filtered[i].name}</h3>
+        <p><span class="cardDesc">Brand:</span>${filtered[i].brand}</p>
+        <p><span class="cardDesc">Memory:</span>${filtered[i].memory}</p>
+        <p><span class="cardDesc">Price:</span> £${filtered[i].cost}</p>
+        <p class="cardDesc">Colors:<span class="colors">${cols}</span></p>
+        `;
+      displayPhones.appendChild(phone);
+    }
+  } else {
+    let message = document.createElement("p");
+    message.innerHTML = "No phone found!";
+    displayPhones.appendChild(message);
   }
 }
 
@@ -96,7 +104,7 @@ function filterAllPhones() {
     }
   });
   //MEMORY
-  const phoneMemory = Array.from(document.querySelectorAll(".memory"));
+  const phoneMemory = Array.from(document.querySelectorAll(".memoryVal"));
   phoneMemory.forEach(function (mem) {
     if (mem.checked) {
       memory.push(mem.value);
@@ -133,9 +141,71 @@ function filterAllPhones() {
 let searchBtn = document.querySelector("#searchBtn");
 searchBtn.addEventListener("click", () => {
   filterAllPhones();
-  console.log(filtered);
+  if (showMobileFilter) {
+    showMobileFilter = !showMobileFilter;
+    toggleMobileFilter();
+  }
 });
 
 //INIT
 filterAllPhones();
-console.log(filtered);
+
+//HERO BUTTONS
+
+let shopNow = document.querySelector("#shopNow");
+shopNow.addEventListener("click", () => {
+  document.getElementById("main").scrollIntoView();
+});
+
+let checkSamsung = document.querySelector("#samsung");
+let checkIphone = document.querySelector("#iphone");
+let checkGoogle = document.querySelector("#google");
+let checkMotorolla = document.querySelector("#motorolla");
+let checkNokia = document.querySelector("#nokia");
+
+checkSamsung.addEventListener("click", () => {
+  document.querySelector("#brandSamsung").checked = true;
+  filterAllPhones();
+  if (showMobileNav) {
+    showMobileNav = !showMobileNav;
+    toggleMobileNav();
+  }
+});
+checkIphone.addEventListener("click", () => {
+  document.querySelector("#brandApple").checked = true;
+  filterAllPhones();
+  if (showMobileNav) {
+    showMobileNav = !showMobileNav;
+    toggleMobileNav();
+  }
+});
+checkGoogle.addEventListener("click", () => {
+  document.querySelector("#brandGoogle").checked = true;
+  filterAllPhones();
+  if (showMobileNav) {
+    showMobileNav = !showMobileNav;
+    toggleMobileNav();
+  }
+});
+checkMotorolla.addEventListener("click", () => {
+  document.querySelector("#brandMotorolla").checked = true;
+  filterAllPhones();
+  if (showMobileNav) {
+    showMobileNav = !showMobileNav;
+    toggleMobileNav();
+  }
+});
+checkNokia.addEventListener("click", () => {
+  document.querySelector("#brandNokia").checked = true;
+  filterAllPhones();
+  if (showMobileNav) {
+    showMobileNav = !showMobileNav;
+    toggleMobileNav();
+  }
+});
+
+const closeMobileFilter = document.querySelector("#closeFilterMobile");
+closeMobileFilter.addEventListener("click", () => {
+  showMobileFilter = !showMobileFilter;
+  toggleMobileFilter();
+});

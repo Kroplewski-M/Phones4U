@@ -266,14 +266,19 @@ label{
     .title{
         font-size: 45px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
         text-align: center;
+        color: transparent;
         margin-top: 30px;
-        color: #EEEEEE;
         max-width: 350px;
         margin-left: auto;
         margin-right: auto;
         position: relative;
         z-index: 10;
+        background-image: url(./images/text-background.jpg);
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
     }
     .shopNow{
         width: 100px;
@@ -426,7 +431,7 @@ label{
         font-size: 55px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin-top: 100px;
-        color: #EEEEEE;
+        color: transparent;
         max-width: 480px;
         float: right;
         margin-bottom: 75px;
